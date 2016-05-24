@@ -1,0 +1,56 @@
+/ BOOTSTRAP SIDEBAR
+.sidebar
+  %nav.navbar.navbar-custom.font-alt
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#custom-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      / YOU LOGO HERE
+      %a.navbar-brand{:href => "#", :style => "padding:0 !important;"}
+        / IMAGE OR SIMPLE TEXT
+        %img.light-logo{:src => "img/logo-light.png", :style => "margin-left:10px;", :width => "170px"}
+    #custom-collapse.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          %a{:href => "#about"} Tech Blog
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#portfolio"} Live Projects
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{:href => "http://galvanize.space"} Galvanize Café
+            %li
+              %a{:href => "https://wine-xpress.com"} WineXpress Wine Store
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#portfolio"} Mobile UX Design
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{:href => "#"} Hibari
+            %li
+              %a{:href => "#"} Home Delights
+            %li
+              %a{:href => "#"} Mirawoong
+            %li
+              %a{:href => "#"} Shopee
+            %li
+              %a{:href => "#"} AddMe In
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#portfolio"} Case Analysis Decks
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{:href => "#"} Mobileye - Future of Driverless Cars
+            %li
+              %a{:href => "#"} HuStream Technologies - Interactive Video
+            %li
+              %a{:href => "#"} Telus Canada - The Internet of Things
+        %li
+          %a{:href => "#contact"} Contact
+  / SOCIAL LINKS
+  .copyright
+    .social-icons.m-b-20
+      %a.fa.fa-github{:href => "https://github.com/stewartSG", :style => "font-size: 20px;", :target => "_blank"}
+      %a.fa.fa-linkedin{:href => "http://linkedin.com/in/stewartSG", :style => "font-size: 20px;", :target => "_blank"}
+    %p Stewart Huang | Bolditalic Studios
+  / /SOCIAL LINKS
+/ /SIDEBAR

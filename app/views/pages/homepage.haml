@@ -1,0 +1,18 @@
+/ LOADING IMAGE
+.page-loader{:style => "display: none;"}
+  .loader Loading...
+/ /PRELOADER
+= render 'layouts/components/sidebar'
+/ WRAPPER
+.wrapper
+  / #1 SPLASH SECTION
+  = render 'layouts/components/hero'
+  / /SPLASH
+  / #2 PORTFOLIO SECTION
+  = render 'layouts/components/portfolio'
+  / /PORTFOLIO
+  %hr.divider
+  / #3 CONTACT US FORM
+  = render 'layouts/components/contact'
+  / /CONTACT US
+/ /WRAPPER

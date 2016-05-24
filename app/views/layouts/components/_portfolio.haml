@@ -1,0 +1,114 @@
+%section#portfolio.module-sm
+  .container-fluid
+    .row
+      %h2.module-title.font-alt{:style => "margin-bottom:10px"} Portfolio
+    / FILTERS
+    .row
+      .col-sm-12
+        %ul#filters.filters.font-alt
+          %li
+            %a.current{"data-filter" => "*", :href => "#"} All
+          %li
+            %a{"data-filter" => ".web", :href => "#"} Web
+          %li
+            %a{"data-filter" => ".mobile", :href => "#"} Mobile
+          %li
+            %a{"data-filter" => ".ux", :href => "#"} UX Concept
+    / /FILTERS
+    .works-grid-wrapper
+      #works-grid.works-grid.works-grid-gutter{:style => "position: relative; height: 870px;"}
+        / Launch Hack
+        %article.work-item.mobile{:style => "position: absolute; left: 0px; top: 0px;"}
+          .work-wrapper
+            .work-thumbnail
+              %img{:alt => "", :src => "img/portfolio-1.jpg"}
+            .work-caption
+              %h3.work-title.font-alt Launch Hackathon (SF) - Honorable Mention
+              %span.work-category.font-serif
+                %a{:href => "https://www.youtube.com/watch?v=DvdlYlfEDwU&feature=share&t=1h52m04s", :target => "_blank"} Watch the video
+            %a.work-link{:href => "https://www.youtube.com/watch?v=DvdlYlfEDwU&feature=share&t=1h52m04s"}
+        / /PORTFOLIO ITEM
+        / GALVANIZE WEB
+        %article.work-item.web{:style => "position: absolute; left: 410px; top: 0px;"}
+          .work-wrapper
+            .work-thumbnail
+              %img{:alt => "", :src => "img/portfolio-8.jpg"}
+            .work-caption
+              %h3.work-title.font-alt Galvanize Café - Work Anywhere
+              %span.work-category.font-serif
+                %a{:href => "#"} Experience the user flow
+            %a.work-link{:href => "http://galvanize.space", :target => "_blank"}
+        / /GALVANIZE WEB
+        / Galvanize Mobile App
+        %article.work-item.mobile{:style => "position: absolute; left: 820px; top: 0px;"}
+          .work-wrapper
+            .work-thumbnail
+              %img{:alt => "", :src => "img/portfolio-2.jpg"}
+            .work-caption
+              %h3.work-title.font-alt Galvanize Mobile - Android Native
+              %span.work-category.font-serif
+                %a{:href => "https://www.youtube.com/watch?v=k5cNTsSGp5g", :target => "_blank"} Watch the video
+            %a.work-link{:href => "https://www.youtube.com/watch?v=k5cNTsSGp5g", :target => "_blank"}
+        / /Galvanize Mobile App
+        / WineXpress 21st Century WineStore
+        %article.work-item.fashion{:style => "position: absolute; left: 1230px; top: 0px;"}
+          .work-wrapper
+            .work-thumbnail
+              %img{:alt => "", :src => "img/portfolio-3.jpg"}
+            .work-caption
+              %h3.work-title.font-alt WineXpress - 21st Century WineStore
+              %span.work-category.font-serif
+                %a{:href => "https://wine-xpress.com/WineXpress-war/static/index.jsp", :target => "_blank"} Explore the webstore
+            %a.work-link{:href => "https://wine-xpress.com/WineXpress-war/static/index.jsp", :target => "_blank"}
+        / /WineXpress 21st Century WineStore
+        / Hibari Sketch 3
+        %article.work-item.ux{:style => "position: absolute; left: 0px; top: 312px;"}
+          .work-wrapper
+            .work-thumbnail
+              %img{:alt => "", :src => "img/portfolio-4.jpg"}
+            .work-caption
+              %h3.work-title.font-alt Hibari App - Sketch3 Wireframe
+              %span.work-category.font-serif
+                %a{:href => "#"} Experience the design process
+            %a.work-link{:href => "#"}
+        / /Hibari Sketch 3
+        / ACCENTURE HACK
+        %article.work-item.music{:style => "position: absolute; left: 820px; top: 312px;"}
+          .work-wrapper
+            .work-thumbnail
+              %img{:alt => "", :src => "img/portfolio-5.jpg"}
+            .work-caption
+              %h3.work-title.mobile Hibari - Accenture Hackathon (1st Place)
+              %span.work-category.font-serif
+                %a{:href => "#", :target => "_blank"} Experience the app
+            %a.work-link{:href => "#", :target => "_blank"}
+        / /ACCENTURE HACK
+        / Dancetrometer HACK
+        %article.work-item.mobile{:style => "position: absolute; left: 410px; top: 558px;"}
+          .work-wrapper
+            .work-thumbnail
+              %img{:src => "img/portfolio-6.jpg"}
+            .work-caption
+              %h3.work-title.font-alt Dancetrometer - Sinch! API Winner
+              %span.work-category.font-serif
+                %a{:href => "http://techcrunch.com/video/dancetrometer-presents-disrupt-sf-2014-hackathon/518404107/", :target => "_blank"} Catch the Techcrunch Disrupt Demo
+            %a.work-link{:href => "http://techcrunch.com/video/dancetrometer-presents-disrupt-sf-2014-hackathon/518404107/", :target => "_blank"}
+        / /DANCETROMETER HACK
+        / HOME DELIGHTS UX
+        %article.work-item.fashion{:style => "position: absolute; left: 1230px; top: 558px;"}
+          .work-wrapper
+            .work-thumbnail
+              %img{:alt => "", :src => "img/portfolio-7.jpg"}
+            .work-caption
+              %h3.work-title.font-alt Home Delights - UX Concept
+              %span.work-category.font-serif
+                %a{:href => "#", :target => "_blank"} Experience the user flow
+            %a.work-link{:href => "#", :target => "_blank"}
+    / /HOME DELIGHTS UX
+    / works-grid-wrapper
+    / SHOW MORE
+    .row
+      .col-sm-12
+        .m-t-70.text-center
+          %button#show-more.btn.btn-dark.show-more More works
+    / /SHOW MORE
