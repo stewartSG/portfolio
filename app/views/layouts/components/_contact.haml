@@ -1,0 +1,28 @@
+%section#contact.module{:style => "padding-top: 50px; padding-bottom: 50px;"}
+  .container-fluid.container-custom
+    / MODULE TITLE
+    .row
+      .col-sm-6.col-sm-offset-3
+        %h4.module-title{:style => "font-size: 40px;"} Interested to collaborate?
+        %p.module-subtitle{:style => "margin-bottom: 40px;"}
+          Simply drop me a message below
+          and I will get in touch with you shortly!
+    / /MODULE TITLE
+    .row
+      .col-sm-12
+        %form#feebackForm.myform{:action => "/submit_email", :method => "post"}
+          .form-group
+            %label.sr-only Name
+            %input#name.form-control{"data-error-empty" => "Please enter your name", :name => "name", :placeholder => "Name*", :required => "true", :style => "text-transform: capitalize;", :type => "text"}
+              %p.help-block.text-danger
+          .form-group
+            %label.sr-only Your Email
+            %input#email.form-control{"data-validation-required-message" => "Please enter your email address.", :name => "email", :placeholder => "E-mail*", :required => "", :style => "text-transform: none;", :type => "email"}
+              %p.help-block.text-danger
+          .form-group
+            %textarea#message.form-control{"data-error-empty" => "Enter message", "data-validation-required-message" => "Please enter your enquiry.", :name => "message", :placeholder => "Enquiry*", :required => "true", :rows => "7", :style => "text-transform: none;"}
+            %p.help-block.text-danger
+          .text-center
+            %button.btn.btn-block.btn-round.btn-dark{"data-error-message" => "Error!", "data-ok-message" => "Email Sent", "data-sending-message" => "Sending...", :name => "submit", :type => "submit"} Submit
+          %input#submitted3{:name => "submitted", :type => "hidden", :value => "true"}
+            / .col-*

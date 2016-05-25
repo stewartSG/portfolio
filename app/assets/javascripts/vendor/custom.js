@@ -8,9 +8,35 @@
 
 	$(window).load(function() {
 		$('.page-loader').delay(350).fadeOut('slow');
-	});
+    });
 
 	$(document).ready(function() {
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+
+        if(window.location.href.indexOf("success") > -1)
+        {
+            toastr["success"]("Your enquiry is sent to us successfully! We will get back to you soon :) ")
+        }
+        else if (window.location.href.indexOf("error") > -1){
+            toastr["failure"]("Something broke :( please try again later. Sorry for the inconvenience caused!")
+        }
 
 		var moduleHero = $('.module-hero, .module-map'),
 			mobileTest;

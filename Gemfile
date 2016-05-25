@@ -23,7 +23,16 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# our templating engine
 gem 'haml-rails'
+
+# for mailing
+gem 'mailgun-ruby', '~>1.0.2', require: 'mailgun'
+gem 'certified'
+
+# for react
+gem 'react-rails'
+
 
 
 # Use ActiveModel has_secure_password
