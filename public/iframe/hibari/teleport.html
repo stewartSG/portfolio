@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Hibari</title>
+    <!-- Fonts -->
+    <link href="css/font1.css" rel="stylesheet" type="text/css">
+    <link href="css/font2.css" rel="stylesheet" type="text/css">
+    <!-- End Fonts -->
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/switcher.css" type="text/css">
+    <link rel="stylesheet" href="css/datepicker.css" type="text/css">
+    <link rel="stylesheet" href="css/button.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-switch.css" type="text/css">
+    <!-- End CSS Files -->
+    <style type="text/css"></style>
+    <style id="fit-vids-style">
+    .fluid-width-video-wrapper {
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+    
+    .fluid-width-video-wrapper iframe,
+    .fluid-width-video-wrapper object,
+    .fluid-width-video-wrapper embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #map {
+        height: 300px
+    }
+    </style>
+</head>
+
+<body class="header-fixed skin-blue  pace-done" cz-shortcut-listen="true">
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+    <!-- FIXME NAVIGATIONAL RELATED STUFF -->
+    <header>
+        <a href="#" class="logo hidden-xs">
+            <span class="icon">
+            <i class="fa fa-paper-plane"></i>
+        </span>Hibari
+        </a>
+        <nav class="navbar-main" role="navigation" style="background-color: #3BB2D0; box-shadow: 0 2px 2px; border-bottom-color: #3BB2D0">
+            <!-- HABARI TOPNAV LEFT BUTTON-->
+            <ul class="button-container pull-left">
+                <li class="item">
+                    <!-- Left Sidebar Toggle Button -->
+                    <a id="sidebarLeftToggle" class="nav-button" data-toggle="collapse" data-target=".sidebarLeft">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </a>
+                </li>
+            </ul>
+            <!-- End Left Button Container -->
+            <!-- HABARI TOPNAV RIGHT BUTTON -->
+            <ul class="button-container pull-right">
+                <li class="item">
+                    <a href="food.html" class="nav-button">
+                        <span class="fa fa-map-marker"></span>
+                    </a>
+                </li>
+                <!-- Right Sidebar Toggle Button -->
+                <!--<a id="sidebarRightToggle" class="nav-button" data-toggle="collapse" data-target=".sidebarRight">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="fa fa-pencil-square-o"></span>-->
+                <!--</a>-->
+                <!-- End Right Sidebar Toggle Button -->
+                <li class="item dropdown collapse sidebarRight chat-search hidden-xs">
+                    <!-- Chat List Search Form -->
+                    <form class="search-form" role="search">
+                        <input class="form-control" type="text" placeholder="Search Users...">
+                    </form>
+                    <!-- End Chat List Search Form -->
+                </li>
+            </ul>
+            <!-- End Right Button Container -->
+            <!-- HABARI CENTER TEXT -->
+            <div class="nav-content">
+                <h3 class="page-title">Teleport</h3>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar sidebar-left collapse navbar-collapse sidebarLeft in">
+        <!-- Sidebar Wrapper -->
+        <div class="sidebar-wrapper">
+            <!-- Sidebar Navigation ****-->
+            <ul class="sidebar-nav">
+                <!-- Menu Item -->
+                <li class="border-left-green">
+                    <a href="index.html">
+                        <i class="menu-icon fa fa-lg fa-fw fa-home"></i> <span>Home</span>
+                    </a>
+                </li>
+                <!-- End Menu Item -->
+                <!-- Menu Item -->
+                <li class="border-left-blue">
+                    <a href="index.html">
+                        <i class="menu-icon fa fa-lg fa-fw fa-clock-o"></i> <span>Timeline</span>
+                    </a>
+                </li>
+                <!-- End Menu Item -->
+                <!-- Menu Item -->
+                <li class="border-left-pink">
+                    <a href="teleport.html">
+                        <i class="menu-icon fa fa-lg fa-fw fa-map-marker"></i> <span>Teleport</span>
+                    </a>
+                </li>
+                <!-- End Menu Item -->
+                <!-- Menu Item -->
+                <li class="border-left-green">
+                    <a href="agenda.html">
+                        <i class="menu-icon fa fa-lg fa-fw fa-calendar-o"></i> <span>Agendas</span>
+                    </a>
+                </li>
+                <!-- End Menu Item -->
+                <!-- Menu Item -->
+                <li class="border-left-purple">
+                    <a href="setting.html">
+                        <i class="menu-icon fa fa-lg fa-fw fa-cogs"></i> <span>Settings</span>
+                    </a>
+                </li>
+                <!-- End Menu Item -->
+                <!-- Menu Item -->
+                <li class="border-left-light-blue">
+                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#mail-submenu" title="Mail">
+                        <i class="menu-icon fa fa-lg fa-fw fa-inbox"></i> <span class="parent-item">Mail</span>
+                        <span class="badge bg-green squared pull-right">24 New</span>
+                    </a>
+                    <ul id="mail-submenu" class="collapse">
+                        <li>
+                            <a href="inbox.html">Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#">Open Message</a>
+                        </li>
+                        <li>
+                            <a href="#">Compose</a>
+                        </li>
+                    </ul>
+                </li>
+                <div class="search-form-container">
+                    <form class="search-form" role="search">
+                        <input type="text" placeholder="Search meeting, agenda etc">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <!-- End Menu Item -->
+            </ul>
+            <!-- End Sidebar Navigation -->
+        </div>
+        <!-- End Sidebar Wrapper -->
+    </aside>
+    <!-- END OF NAVIGATIONAL RELATED STUFF -->
+    <!-- FIXME INSERT PAGE CONTENT HERE  -->
+    <aside class="content-wrapper sidebarLeft collapse in">
+        <!-- Page Content -->
+        <div class="content container-fluid sidebarRight animated fadeInUp collapse">
+            <div class="row">
+                <!-- FIXME part 2 : title / ETA -->
+                <div class="col-sm-3">
+                    <div class="panel panel-light-blue bg-light-blue color-white">
+                        <div class="panel-body">
+                            <h3 class="mg-top-0">Corporate Meeting</h3>
+                            <p>Singapore, Flyer (ETA: 15 minutes)</p>
+                        </div>
+                        <div class="progress progress-xs mg-btm-0">
+                            <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="background-color: #2ecc71; width: 65%;">
+                            </div>
+                        </div>
+                        <div class="panel-body text-right">
+                            <h4>Meeting Starts in 60 minutes</h4>
+                            <p>Today, 16:00 hrs to 18:00 hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIXME part 3 : maps -->
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Traffic Routing Suggestion</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4>Traffic Advice:</h4>
+                            <br>
+                            <div class="bs-callout bs-callout-warning mg-top-0 mg-btm-0">
+                                <h4>OCBC Cycle Singapore </h4>
+                                <p>Road Closure along Nicoll Highway, Bayfront Ave.</p>
+                                <p>Travel via Kallang Road instead </p>
+                            </div>
+                            <div class="col-md-12" style="margin-top: 20px;">
+                                <!-- google map-->
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIXME banner 4 FOOD SUGGESTIOn -->
+                <div class="col-sm-12">
+                    <div class="panel panel-white border-top-light-orange">
+                        <div class="panel-body content-title-container">
+                            <div class="left">
+                                <h4 class="mg-top-5 mg-btm-0">Your meeting ends at 6:00pm, would you like to have dinner nearby?</h4>
+                            </div>
+                            <div class="right">
+                                <a href="food.html" class="btn btn-warning col-xs-12">Show Food Suggestion</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIXME part 4 : submit claims -->
+            <div class="col-sm-12">
+                <div class="panel panel-white border-top-green">
+                    <div class="panel-body chat">
+                        <div class="row chat-wrapper">
+                            <div class="col-md-8">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Submit Travel Claims</h3>
+                                </div>
+                                <div>
+                                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 452px;">
+                                        <div class="message-list-wrapper" style="overflow: hidden; width: auto; height: 452px;">
+                                            <ul class="message-list">
+                                                <li class="text-center">
+                                                    <a href="javascript:void(0);" class="btn btn-default">Load More Messages</a>
+                                                </li>
+                                                <li class="right">
+                                                    <span class="username">Yanique Robinson</span>
+                                                    <small class="timestamp">
+                                                    <i class="fa fa-clock-o"></i>5 hours ago
+                                                </small>
+                                                    <div class="body">
+                                                        <div class="clearfix"></div>
+                                                        <div class="message well well-sm">
+                                                            <p><a href="#" class="white">Travel Claims for Fuel today</a></p>
+                                                            <img src="img/e-receipt1.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 181.76512455516px; background: rgb(0, 0, 0);"></div>
+                                        <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+                                    </div>
+                                    <div class="compose-box">
+                                        <div class="row">
+                                            <div class="col-xs-12 mg-btm-10">
+                                                <textarea id="btn-input" class="form-control input-sm" placeholder="Describe the claim you are making"></textarea>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <button class="btn btn-green btn-sm">
+                                                    <i class="fa fa-camera"></i>
+                                                </button>
+                                                <button class="btn btn-green btn-sm">
+                                                    <i class="fa fa-file"></i>
+                                                </button>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <button class="btn btn-green btn-sm pull-right">
+                                                    <i class="fa fa-location-arrow"></i> Submit
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Content -->
+    </aside>
+    <!-- End Page Content Wrapper -->
+    <script src="js/js-collate.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.datepicker').datepicker({
+            "setDate": new Date(),
+            "autoclose": true
+        });
+
+        $("[name='my-checkbox']").bootstrapSwitch();
+    });
+    </script>
+    <script>
+    var markerWindow;
+    var markerArray = [];
+    var directionsDisplay;
+    var directionsService;
+    var map;
+    var service;
+
+    function initMap() {
+        directionsService = new google.maps.DirectionsService;
+        directionsDisplay = new google.maps.DirectionsRenderer;
+
+        markerWindow = new google.maps.InfoWindow(); // init stepdisplay
+
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: {
+                lat: 1.301254,
+                lng: 103.835679
+            }
+        });
+
+        //init google place services with ap object
+        service = new google.maps.places.PlacesService(map);
+
+        var trafficLayer = new google.maps.TrafficLayer();
+        trafficLayer.setMap(map); //set traffic overlay
+        directionsDisplay.setMap(map); // set route overlay
+        calculateAndDisplayRoute(directionsService, directionsDisplay);
+        // getSGTrafficIncident();
+        // Instantiate an info window to hold step text.
+
+
+        // document.getElementById('start').addEventListener('change', onChangeHandler); // document.getElementById('end').addEventListener('change', onChangeHandler);
+
+    }
+
+    function getSGTrafficIncident() {
+        var lta_url = "http://datamall.mytransport.sg/ltaodataservice.svc/IncidentSet";
+        var lta_api = "ay6Z8AvtLToxuqpw==";
+        var lta_uuid = "4ef28529-1717-4da2-be06-5d6c95951776";
+        var r = new XMLHttpRequest();
+        r.withCredentials = true;
+        r.open("GET", lta_url, true);
+        r.setRequestHeader('AccountKey', 'nlFoZOay6Z8AvtLToxuqpw==');
+        r.setRequestHeader('UniqueUserId', '4ef28529-1717-4da2-be06-5d6c95951776');
+        r.setRequestHeader('accept', 'application/json');
+        r.setRequestHeader('Content-Type', ' application/x-www-form-urlencoded');
+        r.setRequestHeader('Access-Control-Allow-Headers', '*');
+
+        r.onreadystatechange = function() {
+            if (r.readyState != 4 || r.status != 200) return;
+            alert("Success: " + r.responseText);
+        };
+        r.send();
+    }
+
+    function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+
+        var start = new google.maps.LatLng(1.303863, 103.832315);
+        // var end = new google.maps.LatLng(1.295310, 103.851675);
+        var end = new google.maps.LatLng(1.304523, 103.855980);
+
+        directionsService.route({
+            origin: start,
+            destination: end,
+            travelMode: google.maps.TravelMode.DRIVING
+        }, function(response, status) {
+            if (status === google.maps.DirectionsStatus.OK) {
+                directionsDisplay.setDirections(response);
+                // showSteps(response); // pass response object to showStep function to get steps
+                console.log(JSON.stringify(response));
+                // console.log(JSON.stringify(response.routes[0].legs));
+            } else {
+                window.alert('Directions request failed due to ' + status);
+            }
+        });
+    }
+
+    function showSteps(directionResult) {
+        // For each step, place a marker, and add the text to the marker's
+        // info window. Also attach the marker to an array so we
+        // can keep track of it and remove it when calculating new
+        // routes.
+        var myRoute = directionResult.routes[0].legs[0];
+        var myWarnings = directionResult.routes[0].warnings;
+
+        console.log(JSON.stringify(myWarnings));
+
+        for (var i = 0; i < myRoute.steps.length; i++) {
+            // console.log("start_point: " + myRoute.steps[i].start_location);
+            // console.log("end_point: " + myRoute.steps[i].end_location);
+            // var startmarker = new google.maps.Marker({
+            //     position: myRoute.steps[i].start_point,
+            //     map: map,
+            //     animation: google.maps.Animation.DROP
+
+            // });
+            // var endmarker = new google.maps.Marker({ // position: myRoute.steps[i].start_point, // map: map // });
+
+
+            // attachInstructionText(startmarker, myRoute.steps[i].instructions);
+            getNearbyPlaces(myRoute.steps[i].start_point);
+            // getNearbyPlaces(myRoute.steps[i].end_point);
+
+            // markerArray[i] = startmarker;
+        }
+
+    }
+
+    function getNearbyPlaces(latLng) {
+        service.nearbySearch({
+            location: latLng,
+            radius: 500,
+            types: ['food']
+
+        }, callback);
+
+    }
+
+    function callback(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+                createMarker(results[i]);
+            }
+        }
+    }
+
+    function createMarker(place) {
+        var placeName = JSON.stringify(place.name)
+
+        var placeLoc = place.geometry.location;
+        var marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location,
+            animation: google.maps.Animation.DROP
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+
+            markerWindow.setContent(place.name);
+            markerWindow.open(map, this);
+        });
+    }
+
+    function attachInstructionText(marker, text) {
+        google.maps.event.addListener(marker, 'click', function() {
+            stepDisplay.setContent(text);
+            stepDisplay.open(map, marker);
+        });
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&libraries=places&callback=initMap" async defer></script>
+    <script src="js/vanilla.js"></script>
+</body>
+
+</html>
