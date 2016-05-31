@@ -8,13 +8,13 @@
         %span.icon-bar
         %span.icon-bar
       / YOU LOGO HERE
-      %a.navbar-brand{:href => "#hero", :style => "padding:0 !important;"}
+      %a.navbar-brand{:href => "home", :style => "padding:0 !important;", 'data-no-turbolink' => true}
         / IMAGE OR SIMPLE TEXT
         %img.light-logo{:src => "img/logo-light.png", :style => "margin-left:10px;", :width => "170px"}
     #custom-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li
-          %a{:href => "#about"} Tech Blog
+          %a{:href => "http://bolditalic-studios.ghost.io/", :target => "_blank"} Tech Blog
         %li.dropdown
           %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#portfolio"} Live Projects
           %ul.dropdown-menu{:role => "menu"}
@@ -26,15 +26,15 @@
           %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#portfolio"} Mobile UX Design
           %ul.dropdown-menu{:role => "menu"}
             %li
-              %a{:href => "#"} Hibari
+              %a{:href => "hibari", 'data-no-turbolink' => true} Hibari
             %li
-              %a{:href => "#"} Home Delights
+              %a{:href => "#", 'data-no-turbolink' => true} Home Delights
             %li
-              %a{:href => "#"} Mirawoong
+              %a{:href => "#", 'data-no-turbolink' => true} Mirawoong
             %li
-              %a{:href => "#"} Shopee
+              %a{:href => "#", 'data-no-turbolink' => true} Shopee
             %li
-              %a{:href => "#"} AddMe In
+              %a{:href => "#", 'data-no-turbolink' => true} AddMe In
         %li.dropdown
           %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#portfolio"} Case Analysis Decks
           %ul.dropdown-menu{:role => "menu"}
