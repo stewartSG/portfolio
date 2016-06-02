@@ -14,7 +14,9 @@
     #custom-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li
-          %a{:href => "http://bolditalic-studios.ghost.io/", :target => "_blank"} Tech Blog
+          %a{:href => "home", 'data-no-turbolink' => true} Home
+        -#%li
+        -#  %a{:href => "http://bolditalic-studios.ghost.io/", :target => "_blank"} Tech Blog
         %li.dropdown
           %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#portfolio"} Live Projects
           %ul.dropdown-menu{:role => "menu"}
@@ -28,24 +30,20 @@
             %li
               %a{:href => "hibari", 'data-no-turbolink' => true} Hibari
             %li
-              %a{:href => "#", 'data-no-turbolink' => true} Home Delights
+              %a{:href => "homedelights", 'data-no-turbolink' => true} Home Delights
             %li
-              %a{:href => "#", 'data-no-turbolink' => true} Mirawoong
-            %li
-              %a{:href => "#", 'data-no-turbolink' => true} Shopee
-            %li
-              %a{:href => "#", 'data-no-turbolink' => true} AddMe In
+              %a{:href => "mirawoong", 'data-no-turbolink' => true} Mirawoong
+            -#%li
+            -#  %a{:href => "shopee", 'data-no-turbolink' => true} Shopee
         %li.dropdown
           %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#portfolio"} Case Analysis Decks
           %ul.dropdown-menu{:role => "menu"}
             %li
-              %a{:href => "#"} Mobileye - Future of Driverless Cars
+              %a{:href => "casedeck/MobileEye-FutureofDriverlessCars.pdf", :target => "_blank"} Mobileye - Future of Driverless Cars
             %li
-              %a{:href => "#"} HuStream Technologies - Interactive Video
-            %li
-              %a{:href => "#"} Telus Canada - The Internet of Things
+              %a{:href => "casedeck/TelusCase-InternetofThings.pdf", :target => "_blank"} Telus Canada - The Internet of Things
         %li
-          %a{:href => "#contact"} Contact
+          %a{:href => "home#contact"} Contact
   / SOCIAL LINKS
   .copyright
     .social-icons.m-b-20

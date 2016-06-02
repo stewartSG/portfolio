@@ -1,0 +1,80 @@
+%section.module
+  .container-fluid.container-custom
+    .row
+      .col-sm-8.col-sm-offset-2
+        / PORTFOLIO CONTENT
+        %article.portfolio-post.post
+          %img{:alt => "", :src => "img/mirawoong/usability-testing.png", :style => "width: 700px"}
+          %h4 Intentionality
+          %blockquote
+            Shopee is a mobile-first P2P marketplaces mainly focused on Asia markets. It is also a platform
+            to help sellers enjoy fast, smooth and safe transactions with buyers.
+            %p
+            %p
+            I thought it would be fun to embark on a simple UX design excercise to improve seller's efficiency
+            in listing items on the marketplace.
+            %p
+          %h4 Lean UX - Usability Research
+          %p
+          The very first step is to validate where the usability problems are and I did so by
+          designing a jobs story for 5 users I could gather to complete to understand where
+          their pain points and made some interesting observations. It seems that most users
+          had issues navigating the app so we dabbled deeper into the information architecture to investigate.
+          %p
+            %p
+
+            %h4 1) Confusion with existing information architecture
+            %img{:alt => "", :src => "img/mirawoong/information-architecture.png", :style => "width: 700px"}
+            Perhaps one of the bigger usability problem is that information were duplicated across
+            different navigations creating confusion. The content on “Explore” and “Learn” were almost identical
+            and seemed to serve the same purpose.
+            %p
+            The current information architecture created confusion and frustration especially when users
+            forgot what they clicked on before and are wondering which to click to return to the right set of menu.
+            %p
+
+            %h4 2) Splash screen frustrations
+            Most users (at least the bunch I asked to try out the app) are pretty impatient.
+            By that I mean that they typically don’t want to wait more than 10 secs to load a mobile app.
+            %p
+            The users also commented that they will not proceed beyond the splash page when left on their own.
+            %p
+            %img{:alt => "", :src => "img/mirawoong/loading.png", :style => "width: 500px"}
+
+            %p
+
+            %h4 3) Confusion learning sequence
+            Users who clicked on “Explore” or “Learn” and end up getting frustrated over :
+            %br 1) Lack of clarity over which challenge to tackle first or next as there are no clear indications
+            2) Lack of instructions for games
+            %br 3) Unclear game progression
+            4) Repeated alert prompt confuses and annoy users
+            %p
+            %img{:alt => "", :src => "img/mirawoong/sequence.png", :style => "width: 500px"}
+
+            %p
+
+            %h4 Mirawoong Redesign - Initial Wireframes with Sketch3
+            %img{:alt => "", :src => "img/mirawoong/overview.png", :style => "width: 700px"}
+
+            %h4 UX Improvement #1 - Simplifying Information Architecture
+            %img{:alt => "", :src => "img/mirawoong/newarchitecture.png", :style => "width: 400px"}
+            %p
+
+            %h4 UX Improvement #3 - Clearer loading sequence with splash screen
+            %img{:alt => "", :src => "img/mirawoong/tutorial.png", :style => "width: 500px"}
+
+            %h4 UX Improvement #4 - Better learning sequence
+            %img{:alt => "", :src => "img/mirawoong/bettersequence.png", :style => "width: 500px"}
+
+            %h4 Key Learnings
+            While the UX improvements were not exhaustive, we validated the user experience enhancement's effectiveness
+            by inviting our test participants back to try the improved app for the second time to understand where we
+            could have improve better or where we had done well.
+            %p
+            Overall, we are happy with the results gathered that it did help made navigating the app experience a lot better.
+            The next step would probably be dwelling deeper into visual design to improve the feel and experience on the app.
+        / TECHNOLOGIES
+        %h4 Technologies Used
+        .tags.font-serif
+          %a Sketch3

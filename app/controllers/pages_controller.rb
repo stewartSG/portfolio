@@ -4,6 +4,18 @@ class PagesController < ApplicationController
   def homepage
   end
 
+  def addmein
+  end
+
+  def homedelights
+  end
+
+  def mirawoong
+  end
+
+  def shopee
+  end
+
   def submit_email
     username = params[:name]
     fromEmail = params[:email]
