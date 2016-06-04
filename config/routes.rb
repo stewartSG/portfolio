@@ -5,10 +5,8 @@ Rails.application.routes.draw do
 
   get 'home' => 'pages#homepage'
 
-  get 'hibari' => 'pages#hibari'
-  get 'addmein' => 'pages#addmein'
+  get 'hibari' => 'pages#hibari' 
   get 'homedelights' => 'pages#homedelights'
   get 'mirawoong' => 'pages#mirawoong'
-  get 'shopee' => 'pages#shopee'
 
 end
